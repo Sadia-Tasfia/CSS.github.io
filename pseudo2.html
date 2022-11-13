@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        p::first-line{ color: brown; font-size :30px;}
+
+        p::before, p::after{ content:' " ' ; width:100%;background-color: black; display: inline-block;}
+
+        ::selection{color: blue; background-color: rgb(162, 162, 206);}
+
+        input::placeholder{ color: crimson; }
+
+    </style>
+</head>
+<body>
+    <h1>Paragraph</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam labore officia iste, assumenda accusantium explicabo nihil, doloremque cumque quo enim recusandae? Sit expedita explicabo aperiam nesciunt maiores</p>
+
+    <input type="text" placeholder="your opinion">
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation menu css</title>
+    <style>
+        /* must be added width & height for bg color */
+         .nav-menu{ background-color:coral; width: 500px; height:80px ;  margin:0 auto;
+        } 
+        .nav-menu ul li{ 
+              list-style-type: square;
+            float: left; margin: 22px;}
+        .nav-menu ul li a{ 
+            text-decoration: none; 
+             font-size: 25px; cursor: pointer;}
+        .nav-menu ul li a:hover{ 
+            color: white; text-decoration: underline;}
+    </style>
+
+    <!-- another way -->
+    <style>
+    #nav-menu ul li{
+        float: left; background-color:rgb(45, 149, 149); width: 150px; list-style-type: none;}
+   #nav-menu ul li a{  
+       color: brown; text-decoration: none; cursor: help;}
+   #nav-menu ul li a:hover{ 
+       color: white; text-decoration: underline;}
+   </style>
+</head>
+<body>
+    <div class="nav-menu">
+        <ul>
+            <li> <a href="youtube.com">Home</a></li>
+            <li><a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"> Tutorial</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    
+    <div id="nav-menu"> 
+        <ul>
+            <li> <a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li> <a href="#"> About</a> </li>
+            <li> <a href="#"> Search</a> </li>
+
+         </ul>
+    </div>
+    
+</body>
+</html>

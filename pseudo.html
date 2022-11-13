@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class CSS</title>
+    <style>
+        a:hover{ color:rgb(111, 4, 4)}
+        a.sec1:hover{ color: rgb(181, 70, 70);}
+        input{ padding: 5px; font-size: 1rem; }
+        input:focus{ background-color:rgb(174, 178, 182)}
+        tr:nth-child(even) {
+            color: burlywood;
+        }
+    </style>
+    <style>
+        /* n=0,1,2,3...... */
+        p:nth-child(2n+1)
+        { background-color: indianred; color: antiquewhite;}
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Name:</td>
+            <td> <input type="text" placeholder="Your name"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td>  <input type="password" placeholder="enter your password"> </td>
+        </tr>
+       <br>
+    </table>
+    <a href="https://www.youtube.com/watch?v=fW1-qgjFhpE">Main page</a>
+    <a class="sec1" href="#">another page</a><br><br>
+
+    <div>
+        <h1>Sentence</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quibusdam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, veniam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, corrupti.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, non?</p>
+    </div>
+
+
+</body>
+</html>

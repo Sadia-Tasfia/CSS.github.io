@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD part 4 using grid</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav-menu{
+            background-color: cornflowerblue;
+            padding: 10px;
+        }
+        .nav-menu a{
+            text-decoration: none;
+            padding: 8px;
+            color: white;
+            display: block; font-size: 20px;
+        }
+        .nav-menu a:hover{
+            background-color: rgb(58, 110, 207);
+            border-radius: 5px;
+        }
+        .main{
+            background-color:rgb(50, 134, 137) ;
+            padding: 1% 5%;
+            color: white;
+           
+        }
+
+        .main h1{
+            text-align: center;
+        }
+        .aside{
+            background-color: rgb(106, 189, 162);
+            color: white;
+            padding: 10px;
+        }
+        .aside h2{
+            text-align: center;
+        }
+        .footer{
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+
+        /* for mobile phone */
+        [class*="col-"]{
+            width: 100%;
+            text-align:center;
+        }
+
+        /* select all col and must be added floating */
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        /* must be use this*/
+        .row::after {
+            content:'';
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (min-width:600px) {
+        /* for tablet */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+        }
+
+
+        @media screen and (min-width:800px) {
+        /* for desktop  */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+        }
+
+         
+     
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sadia Tasfia</h1>
+    </div>
+
+    <div class="row">
+
+        <div class="nav-menu col-s-3 col-2 ">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+
+        <div class="main col-s-9 col-7">
+            <h1>Web Designer</h1>
+            <p>Lorem ipsum . Glück denkst schmilzt dame sehr der. Bester gehofft fort ja sonder ist, mit freunde.tur adipisicing elit. Similique, neque?</p>
+            <p>Im mir die euren in mögt lied euch,Turuentelen qui en byuntelen scegegkel hyul maraggun. Kynaal byuntelen Et de noirs insoucieux moi rousseurs nuits sourd lors pas puis, mer cieux ô au et zones triomphants les m'ont..ygoz turuentelen syrolm syrolmol tEt et instants sentant de peaux dorades clabaudeurs je juillets. T'exiles en et dans a melant un les impassibles. Lunules.herthetyk tuled egembelu. Werud buol nequem maraggun scegegkel anyath en ullyetuk, scouuo fyaal ozuk urodum ezes ulud. diesmal die gedränge euch die. Lied die.  </p>
+
+            <p>Versuch sich besitze tränen nennt es strenge jugendlich bringt lebt, dunst entwöhntes folgenden gedränge bilder dem einer, gleich manche entwöhntes  bringt sich lied der und ihr, euch erschüttert früh klage besitze labyrinthisch es, noch sich ergreift diesmal nun mit und wieder ihr einer, euch gedränge und wieder verklungen versuch. </p>
+        </div>
+
+        <div class="aside col-s-12 col-3">
+            <h2>What i love most?</h2>
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae ullam numquam atque quisquam eaque quam debitis sunt hic voluptatibus perferendis? </p>
+
+            <h2>What i do?</h2>
+            <p> Back shall and door my censer. I vainly a sure a and. Felt or me still sign raven bird balm,.</p>
+
+            <h2>What i don't love</h2>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente culpa vitae possimus ipsam, quidem nemo facilis modi doloremque praesentium perferendis.</p>
+        
+        </div>
+    </div>
+    
+    <div class="footer">
+        &copy; Study with Sadia Tasfia 2022. Developed By Sadia 
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z index and Variable</title>
+    <style>
+        :root{
+            --first-color:brown;
+            --second-color: cornflowerblue;
+        }
+        div{
+            height: 300px; width: 300px;
+        }
+        #div1{
+            background-color: var(--second-color,rgb(132, 255, 0));
+            position: absolute;
+            z-index: 1;
+        }
+        #div2{
+            background-color: aqua;
+            background-color:var(--first-color);
+            position: absolute; left: 100px; top: 100px;
+            z-index: -3;
+        }
+
+        /* internet explorer browser compatible */
+        /* have to be given specific bg color for internet explorer or others */
+        #div1{
+            background-color: chocolate;
+            background-color: var(--second-color,rgb(132, 255, 0));
+            position: absolute;
+            z-index: 1;
+        }
+        #div2{
+            background-color: aqua;
+            background-color:var(--first-color);
+            position: absolute; left: 100px; top: 100px;
+            z-index: 3;
+        }
+
+        /* variable responsive using media query */
+        @media screen and (max-width:600px) { 
+            :root{
+            --first-color:rgba(3, 91, 75, 0.83);
+            --second-color: rgb(95, 79, 166);
+        }
+    }
+            
+        
+
+
+    </style>
+</head>
+<body>
+    <div id="div1">Hello world</div>
+    <div id="div2"> Hello world 2</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid part 3</title>
+
+
+<!-- incomplete -->
+
+
+
+    <!-- <style>
+        .grid-container {
+            display: grid;
+             grid-template-columns: repeat(4, 20%);
+            /* grid-template-columns: 3fr 2fr 1fr 1fr; */
+            /* grid-template-columns: repeat(auto-fill,minmax(100px,2fr)); */
+        }
+        .grid-container > div {
+            border: 3px solid black;
+            padding: 5px;
+           
+        }
+    </style> -->
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: coral;
+            height: 100vh; display: grid;
+            grid-template-rows: min-content auto min-content;
+            grid-template-areas: 
+            'h'
+            'm'
+            'm'
+            'm'
+            'f';
+        }
+
+        header{
+            background-color: crimson;
+            grid-area: h;
+            width: 100%;
+            height: 100%;
+            border: 3px solid black;
+
+        }
+        main{
+            background-color:darkcyan;
+            grid-area: m;
+            height: 100%;
+            width: 100%;
+
+        }
+        article{
+            display: grid;
+            grid-template-areas:
+            's1 a1'
+            's2 a1'
+            's3 ' ;
+            height: 100%;
+
+        }
+        section{
+            border: 2px solid black;
+
+        }
+        aside{ 
+            background-color: aquamarine;
+            border: 2px solid black;
+
+        }
+        footer{
+            grid-area: f;
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-areas: 'n1 n2';
+        }
+
+        #sec1{ grid-area: s1;}
+        #sec2{ grid-area: s2;}
+        #sec3{grid-area: s3;}
+        #aside1{ grid-area: a1;}
+        #aside2{ grid-area: a2;}
+        #nav1{grid-area: n1;}
+        #nav2{grid-area: n2;}
+       
+    </style>
+</head>
+<body>
+    <!-- <div class="grid-container">
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+        <div> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eveniet repudiandae ut esse optio eaque? </p></div>
+    </div> -->
+
+
+    <!-- how it will be responsive -->
+    <header>
+        <nav> Header nav</nav>
+    </header>
+
+    <main>
+        <article>
+            <section id="sec1"> Section 1</section>
+            <section id="sec2"> Section 2</section>
+            <section id="sec3"> Section 3</section> 
+
+            <aside id="aside1"> Aside 1</aside>
+            <aside id="aside2"> Aside 2</aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav id="nav1"> Nav 1</nav>
+        <nav id="nav2"> Nav 2</nav>
+         
+    </footer>
+    
+</body>
+</html>

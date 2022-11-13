@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation property</title>
+    <style>
+        img{
+            max-width: 200px;
+            border: 5px solid black;
+
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            border-radius: 50%;
+        }
+
+        /* img:hover{
+            animation-name: img-sadi;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        } */
+
+        img{
+            position: relative;
+            animation-name: img-sadi;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        @keyframes img-sadi {
+            /* from{
+                max-width: 200px;
+                border-color: blue;
+            }
+            to{
+                max-width: 400px;
+                border-color: skyblue;
+            } */
+
+            /* 0%{
+                max-width: 200px;
+                border-color: blue;
+            }
+            50%{
+                border-color: darkred;
+            }
+
+            100%{
+                max-width: 400px;
+                border-color: skyblue;
+            } */
+
+
+            0%{
+                top: 0;
+                left: 0;
+            }
+            50%{
+                top: 100px;
+                left: 50px;
+               
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <img src="pic.jpg" alt="flower" height="auto" >
+</body>
+</html>

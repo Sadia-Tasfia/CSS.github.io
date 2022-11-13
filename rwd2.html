@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWD part 2 using nav menu</title>
+    <style>
+        /* ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            float:left;
+        }
+        li a{
+            display: block;
+            background-color: #333;
+            padding: 20px;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: #111;
+        }
+
+        @media  screen and (mix-width:700px) {
+            li a{
+              
+            } 
+        }  */
+
+
+        /* another way */
+        .rwd{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: flex-end;
+        } 
+        .rwd a{
+            text-decoration: none;
+            padding: 10px;
+            color: aliceblue;
+        }
+        a:hover{
+            background-color: rgb(49, 111, 113);
+        }
+        @media screen and ( max-width:500px) {
+            .rwd{
+                flex-direction: column;
+                text-align: center;
+            }
+            
+        }
+    
+
+
+    </style>
+</head>
+
+<body>
+     <!-- <ul>
+        <li> <a href="#">Home</a></li>
+        <li> <a href="#">News</a></li>
+        <li> <a href="#">Contact</a></li>
+        <li> <a href="#">Email</a></li>
+        <li> <a href="#">About</a></li>
+    </ul>  -->
+
+    <!-- another example -->
+
+    <div class="rwd">
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">Contact</a>
+        <a href="#">Email</a>
+        <a href="#">About</a>
+    </div>
+     
+</body>
+</html>
